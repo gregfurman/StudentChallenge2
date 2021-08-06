@@ -3,10 +3,11 @@
 Welcome to the Allan Gray Student Challenge. In this challenge we will present you with a small game that we would like you to complete for us. The majority of the game has already been coded, however there is ONE important function "checkGameOver()" that needs to be completed in order for the game to work correctly.
 
 To participate, fork the current repo to your own GitHub account where you can then work on it in your own space. 
+**Make sure you have tested the game, there could be a bug lurking around :)
 
 If you believe you have solved the problem, please email us with a link to your cloned repo at itrecruitment@allangray.co.za
 
-The first student to send through the correct answer will win a R500 Takealot voucher. The repo will be up from TBD, where you will have until TBD to complete the challenge. The winner will only be announced after the challenge has been closed. 
+The first student to send through the correct working answer will win a R500 Takealot voucher. The repo will open/access will be granted on Friday, 6th August @ 5pm and will close on the 13th August @ 5pm (Sharp). The winner will be announced on the 30th August 2021.
 
 
 # Eligibility
@@ -30,7 +31,7 @@ Run the game by opening the index.html file in a browser (Preferably Chrome)
 
 ## Screenshot
 
-<img src="https://github.com/AllanGrayIT/StudentChallenge2/blob/main/Pac-Man_Image.PNG" width="600" height="500">
+<img src="https://github.com/AllanGrayIT/StudentChallenge2/blob/main/Pac-Man_Image.PNG" width="500" height="500">
 
 
 ## How to Play

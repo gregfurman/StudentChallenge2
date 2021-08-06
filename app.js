@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //check for a game over
   function checkGameOver() {
-    if (1===2) {
+    if () {
       //
       //***Please update this function*** - write code that determines that the game meets the conditions that the game is over.
       //
