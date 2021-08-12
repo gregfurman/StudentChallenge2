@@ -1,7 +1,8 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const scoreDisplay = document.getElementById("score");  
   const width = 28;
-  let score = 0, pacmanCurrentIndex = 0;
+  let score = 0, pacManCurrentIndex = 0;
   let winningScore = 274;
   const grid = document.querySelector(".grid");
   const layout = [ 
@@ -64,13 +65,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //create Characters
   //draw pacman onto the board
-  let pacManCurrentIndex = 490;
+  pacManCurrentIndex = 490;
   let pacmanVelocity = {
     x: 0, y: 0,
   };
   const pacmanSpeed = 200;
   squares[pacManCurrentIndex].classList.add("pac-man");
-  pacmanCurrentIndex++;
+  // pacManCurrentIndex++;
   //get the coordinates of pacman on the grid with X and Y axis
   // function getCoordinates(index) {
   //   return [index % width, Math.floor(index / width)]
@@ -130,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function movePacman() {
     squares[pacManCurrentIndex].classList.remove("pac-man");
     setInterval(() => {
+
       if (pacmanVelocity.x === 1 && pacmanVelocity.y == 0) {
         if (
           pacManCurrentIndex % width !== 0 &&
@@ -179,7 +181,6 @@ document.addEventListener("DOMContentLoaded", () => {
           pacManCurrentIndex += width;
         }
       }
-
       squares[pacManCurrentIndex].classList.add("pac-man");
       pacDotEaten();
       powerPelletEaten();
@@ -284,22 +285,21 @@ document.addEventListener("DOMContentLoaded", () => {
         scoreDisplay.innerHTML = score;
         squares[ghost.currentIndex].classList.add(ghost.className, "ghost");
       }
+
       checkGameOver();
     }, ghost.speed);
   }
 
   //check for a game over
   function checkGameOver() {
-    if () {
-      //
-      //***Please update this function*** - write code that determines that the game meets the conditions that the game is over.
-      //
-      //display game over screen and refresh after 3s to rest game
-      document.getElementById("game-over-screen").style.display = "flex";
-      setTimeout(function () {
-        window.location.reload();
-      }, 3000);
-    }
+      if (squares[pacManCurrentIndex].classList.contains("ghost")) {
+        //display game over screen and refresh after 3s to rest game
+        document.getElementById("game-over-screen").style.display = "flex";
+        setTimeout(function () {
+          window.location.reload();
+        }, 3000);
+      }
+    
   }
 
   //check for a win - more is when this score is reached
