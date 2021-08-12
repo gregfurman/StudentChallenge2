@@ -292,7 +292,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //check for a game over
   function checkGameOver() {
-      if (squares[pacManCurrentIndex].classList.contains("ghost")) {
+
+    if (squares[pacManCurrentIndex].classList.contains("ghost") && !squares[pacManCurrentIndex].classList.contains("scared-ghost")) {
         //display game over screen and refresh after 3s to rest game
         document.getElementById("game-over-screen").style.display = "flex";
         setTimeout(function () {
